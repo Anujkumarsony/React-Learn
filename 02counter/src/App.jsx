@@ -12,14 +12,19 @@ function App() {
   const addValue = () => {
     //console.log("value added", Math.random());
     
-    counter = counter + 1
-    setCounter(counter)
-    console.log("clicked", counter );
+    if (counter < 20) {
+      counter = counter + 1
+      setCounter(counter)
+      console.log("clicked", counter );
+    }
   }
   const removeValue = () => {
-    counter = counter - 1
-    setCounter(counter)
-    console.log("clicked", counter );
+    if (counter > 0) {
+      counter = counter - 1
+      setCounter(counter)
+      console.log("clicked", counter );
+    }
+    
   }
 
   return (
