@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Card from './assets/components/Card'
 
+
 function App() {
   const [count, setCount] = useState(0)
   let myobj = {
@@ -14,8 +15,10 @@ function App() {
   return (
     <>
       <h1 className='bg-green-400 rounded-xl '>Hello Tailwind</h1>
-      <Card username="anuj sony" btnText="click me"/>
-      <Card username="chaiauranuj" btnText="visit me"/>
+      <Card username="anuj sony" btnText="click me" prgh="hello i am anuj kumar sony"/>
+      <Card username="chaiauranuj" btnText="visit me" prgh="hello this is second card"/>
+      
+     
 
     </>
   )
